@@ -1,0 +1,11 @@
+.bg-gradient-pink-to-white {
+    background-image: linear-gradient(#fff5f5, white);
+}
+
+.sec-about{
+    margin-top: -50px;
+}
+
+.btn-learn-more{
+    color: red;
+}
