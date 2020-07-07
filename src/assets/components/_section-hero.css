@@ -1,0 +1,13 @@
+@media (min-width: 992px) {
+  .navbar .active::after {
+    content: "";
+    display: block;
+    /* border-bottom: 3px solid #e53e3e; */
+    background-color: #e53e3e;
+    border-radius: 100%;
+    max-width: 4px;
+    margin: auto;
+    padding-top: 4px;
+    margin-top: 3px;
+  }
+}
