@@ -1,0 +1,59 @@
+.container {
+	position: relative;
+}
+
+.heading {
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.heading .topic {
+	color: #FA5652;
+	font-size: 29px;
+	font-weight: bold;
+}
+
+.heading > title {
+	color: #035755;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.heading > .description {
+	color: #4B4F51;
+}
+
+.content {
+	padding: 0 200px;
+}
+
+.content::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.content > .content-text, .content > .content-image {
+	width: 50%;
+}
+
+.content:nth-child(even) > .content-text, .content:nth-child(odd) > .content-image {
+	float: left;
+}
+
+.content:nth-child(odd) > .content-text, .content:nth-child(even) > .content-image {
+	float: right;
+}
+
+.content > .content-text {
+	display: flex;
+}
+
+.content > .content-text > .body {
+	text-align: left;
+	text-transform: capitalize;
+}
+
+.virus {
+	position: absolute;
+}
