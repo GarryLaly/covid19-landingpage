@@ -1,59 +1,105 @@
-.container {
-	position: relative;
+@font-face {
+	font-family: "Red Hat Display";
+	src: url(../fonts/RedHatDisplay-Regular.ttf);
 }
 
-.heading {
-	text-align: center;
-	text-transform: capitalize;
-}
-
-.heading .topic {
-	color: #FA5652;
-	font-size: 29px;
+@font-face {
+	font-family: "Red Hat Display";
+	src: url(../fonts/RedHatDisplay-Bold.ttf);
 	font-weight: bold;
 }
 
-.heading > title {
+@font-face {
+	font-family: Gelion;
+	src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+	font-family: Gelion;
+	src: url(../fonts/Poppins-Medium.ttf);
+	font-weight: 500;
+}
+
+.wswd-title {
 	color: #035755;
-	font-size: 50px;
-	font-weight: bold;
 }
 
-.heading > .description {
+.wswd-description {
 	color: #4B4F51;
+	font-family: Gelion;
+	font-size: .65em;
 }
 
-.content {
-	padding: 0 200px;
-}
-
-.content::after {
-	content: "";
-	clear: both;
-	display: table;
-}
-
-.content > .content-text, .content > .content-image {
-	width: 50%;
-}
-
-.content:nth-child(even) > .content-text, .content:nth-child(odd) > .content-image {
-	float: left;
-}
-
-.content:nth-child(odd) > .content-text, .content:nth-child(even) > .content-image {
-	float: right;
-}
-
-.content > .content-text {
-	display: flex;
-}
-
-.content > .content-text > .body {
-	text-align: left;
+.wswd-section {
+	position: relative;
+	font-family: "Red Hat Display";
 	text-transform: capitalize;
 }
 
-.virus {
+.wswd-heading {
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.wswd-heading .wswd-topic {
+	color: #FA5652;
+	font-size: 1.36em;
+	font-weight: bold;
+}
+
+.wswd-heading > .wswd-title {
+	font-size: 2.175em;
+	font-weight: bold;
+}
+
+.wswd-heading > .wswd-description {
+	line-height: 2.15;
+	margin-top: 17px;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 438px;
+}
+
+.wswd-content > .wswd-content-text {
+	display: flex;
+	margin: auto 0;
+}
+
+.wswd-content .wswd-number {
+	background-color: #FEE6E5;
+	color: #FA5652;
+	font-size: 1.7em;
+	font-weight: bold;
+	margin-right: 20px;
+	padding: 2px 0;
+	width: 45px;
+}
+
+.wswd-content .wswd-body {
+	text-align: left;
+}
+
+.wswd-content .wswd-body > .wswd-title {
+	font-family: Gelion;
+	font-size: 1.7em;
+	font-weight: 500;
+	margin-top: 2px;
+	margin-bottom: 10px;
+}
+
+.wswd-content .wswd-body > .wswd-description {
+	line-height: 2.21;
+}
+
+.wswd-content > .wswd-content-image > img {
+	max-height: 374px;
+}
+
+.wswd-virus {
 	position: absolute;
+}
+
+.wswd-virus img {
+	max-width: 100%;
+	max-height: 100%;
 }
